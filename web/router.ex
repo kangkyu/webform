@@ -18,6 +18,7 @@ defmodule Web.Router do
 
     get "/", PageController, :index
     get "/new", NewController, :form
+    post "/new", NewController, :submit
   end
 
   # Other scopes may use custom stacks.

@@ -1,1 +1,7 @@
-<h1>Hello, it's From "new form" Template</h1>
+<h1>Request Form</h1>
+
+<%= form_for @conn, new_path(@conn, :form), [as: :new], fn f -> %>
+  <%= text_input f, :email, placeholder: "Email" %>
+  <%= text_input f, :concept, placeholder: "Concept" %>
+  <%= submit "Submit" %>
+<% end %>

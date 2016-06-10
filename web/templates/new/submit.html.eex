@@ -1,0 +1,2 @@
+<p><strong>EMAIL</strong> <%= @conn.params["new"]["email"] %></p>
+<p><strong>CONCEPT</strong> <%= @conn.params["new"]["concept"] %></p>

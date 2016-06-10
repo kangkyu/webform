@@ -4,4 +4,8 @@ defmodule Web.NewController do
   def form(conn, _params) do
     render conn, "form.html"
   end
+
+  def submit(conn, _params) do
+    render conn, "submit.html"
+  end
 end
